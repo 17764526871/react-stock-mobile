@@ -11,7 +11,8 @@
     "lint:fix": "prettier -c --write \"src/**/*\" --end-of-line auto",
     "lint:js": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx ./src",
     "lint:style": "prettier --write \"src/**/*.less\" && stylelint --fix \"src/**/*.less\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commitlint": "commitlint --config commitlint.config.cjs -e -V"
   },
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
