@@ -1,4 +1,4 @@
-import styles from './index.modules.less'
+import styles from './index.module.less';
 export const Home = () => (
   <div
     style={{
