@@ -1,3 +1,4 @@
+import styles from './index.modules.less'
 export const Home = () => (
   <div
     style={{
@@ -9,5 +10,6 @@ export const Home = () => (
     }}
   >
     home
+    <div className={styles.son_box}> 这是首页里的组件</div>
   </div>
 );
