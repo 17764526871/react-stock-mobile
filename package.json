@@ -66,8 +66,8 @@
     "vite-plugin-eslint": "^1.8.1"
   },
   "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "hooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   }
+}
 }
