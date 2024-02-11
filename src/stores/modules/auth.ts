@@ -1,8 +1,7 @@
 import { atom, watch } from 'helux';
-import { loginResponse } from 'intellistock-apis';
 
 interface AuthType {
-  userInfo?: loginResponse;
+  userInfo?: '';
 }
 
 const localStorageItemName = 'AuthStore';

@@ -1,28 +1,30 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-  background-color: rgba(#ccc, 0.3);
+  background-color: rgb(#ccc 0.3);
 }
 // 全局按钮primary样式
 .ant-btn-primary {
   color: #fff;
-  border-color: #000;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
   background: #000;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  border-color: #000;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 4.5%);
 }
+
 .ant-btn-primary:hover,
 .ant-btn-primary:focus {
   color: #fff;
-  border-color: #0d0d0d;
   background: #0d0d0d;
+  border-color: #0d0d0d;
 }
-.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+
+.ant-btn-primary:not(:disabled, .ant-btn-disabled):hover {
   color: #fff;
-  border-color: #0d0d0d;
   background: #0d0d0d;
+  border-color: #0d0d0d;
 }

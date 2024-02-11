@@ -1,5 +1,4 @@
 import { CronJob } from 'cron';
-import { AuthApis } from 'intellistock-apis';
 import { authAtom, setAuth } from '@/stores';
 
 /** 用户信息定时更新 */
@@ -10,7 +9,7 @@ export const registerUpdateUserInfo = () => {
       if (!authAtom.val.userInfo) {
         return;
       }
-      const userInfo = await AuthApis.getUserInfo();
+      const userInfo = 'true';
       setAuth(() => {
         userInfo;
       });
