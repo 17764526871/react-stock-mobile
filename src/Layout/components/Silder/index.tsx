@@ -1,6 +1,10 @@
-import { Popup } from 'react-vant';
+import { ConfigProvider, Popup } from 'react-vant';
 import styles from './index.module.less';
 import { useState } from 'react';
+import { menuAtom } from '@/stores/modules/menu';
+import { useAtom } from 'helux';
+import { Link } from 'react-router-dom';
+import { MenuComponent } from './component/menu';
 
 // const calcMenuTree = (menuTree: MenuTreeType[]): MenuProps['items'] => {
 //   return menuTree.map((item) => ({
@@ -15,23 +19,20 @@ import { useState } from 'react';
 //     children: item.type === 'catalogue' && calcMenuTree(item.children),
 //   }));
 // };
-
 export const Silder = () => {
-  const [visible, setVisible] = useState(true);
+  const [menuState, setMenuState] = useAtom(menuAtom);
 
   const onClose = () => {
-    setVisible(false);
+    setMenuState((res) => ({ ...res, popupMenuShow: false }));
   };
   return (
-    <div className={styles.silder_box}>
-      <Popup
-        visible={visible}
-        style={{ width: '50%', height: '100%' }}
-        position="left"
-        onClose={onClose}
-      >
-        <div>菜单</div>
-      </Popup>
-    </div>
+    <Popup
+      visible={menuState.popupMenuShow}
+      className={styles.silder_box}
+      position="left"
+      onClose={onClose}
+    >
+       <MenuComponent></MenuComponent>
+    </Popup>
   );
 };

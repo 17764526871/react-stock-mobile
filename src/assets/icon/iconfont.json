@@ -1,0 +1,121 @@
+{
+  "id": "4427679",
+  "name": "Intelli Stock",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1029211",
+      "name": "修改",
+      "font_class": "edit-1-copy",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "1368555",
+      "name": "新增",
+      "font_class": "add",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "2011469",
+      "name": "股票聊天",
+      "font_class": "zaixianzixun",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "2578448",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "3020035",
+      "name": "菜单管理",
+      "font_class": "erji-caidanguanli",
+      "unicode": "eaac",
+      "unicode_decimal": 60076
+    },
+    {
+      "icon_id": "3150463",
+      "name": "自选股",
+      "font_class": "zxgyanbao",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "3585008",
+      "name": "电话会议",
+      "font_class": "dianhuahuiyi",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "3868266",
+      "name": "功能定义",
+      "font_class": "gongnengdingyi",
+      "unicode": "eb62",
+      "unicode_decimal": 60258
+    },
+    {
+      "icon_id": "4288871",
+      "name": "内部研报",
+      "font_class": "neibuyanbaoicon",
+      "unicode": "e837",
+      "unicode_decimal": 59447
+    },
+    {
+      "icon_id": "5171827",
+      "name": "宏观策略",
+      "font_class": "hongguancelve",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "9351375",
+      "name": "公司管理",
+      "font_class": "gongsiguanli",
+      "unicode": "e787",
+      "unicode_decimal": 59271
+    },
+    {
+      "icon_id": "11882433",
+      "name": "角色管理",
+      "font_class": "jiaoseguanli",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "11890633",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "12425438",
+      "name": "系统管理",
+      "font_class": "xitongguanli",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "18208785",
+      "name": "主题新闻",
+      "font_class": "xinwen",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "35001563",
+      "name": "chatgpt",
+      "font_class": "chatgpt",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    }
+  ]
+}

@@ -1,24 +1,57 @@
+@import '../../../styles/index.module.less';
+
 .header_container {
+  height: 70px;
+  padding: 0 20px;
+  background-color: #101114;
+  color: @text-primary-color;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  z-index: 2099;
   display: flex;
   align-items: center;
-  height: 70px;
-  padding: 0 12px;
-  background-color: #fff;
+  align-self: center;
+  justify-content: space-between;
+  vertical-align: middle;
 
-  .right_container {
+  .left_container {
     display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
+    align-items: center;
+    align-self: center;
 
-    .user_container {
+    .menu_icon {
       display: flex;
-      align-items: center;
-      padding: 12px;
-      font-size: 20px;
+
+      margin-right: 12px;
+    }
+
+    .header_logo {
+      display: flex;
+
     }
   }
 
-  .item_container {
-    margin-right: 12px;
+
+  .right_container {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    vertical-align: center;
+
+    .search_container {
+      display: flex;
+
+      margin-right: 12px;
+    }
+
+    .user_container {
+      display: flex;
+
+    }
   }
+
+
 }

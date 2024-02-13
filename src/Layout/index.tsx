@@ -7,10 +7,10 @@ import { Footer } from './components/Footer';
 export const Layout = () => (
   <div className={styles.layout_container}>
     <Silder />
-    <div>
+    <div className="">
       <Header />
     </div>
-    <div>
+    <div className={styles.center_container}>
       <Outlet />
     </div>
     <div>

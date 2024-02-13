@@ -12,7 +12,7 @@ export default ({ mode }: ConfigEnv): UserConfigExport => {
         '@': '/src',
       },
     },
-    base: '/mobile',
+    base: '/',
     server: {
       host: '0.0.0.0',
       port: 9002,

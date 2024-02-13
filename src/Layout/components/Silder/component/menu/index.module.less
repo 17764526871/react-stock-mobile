@@ -1,0 +1,78 @@
+@import '../../../../../styles/index.module.less';
+
+.menu_component_container {
+  color: #fff;
+  padding: 12px;
+
+  .menu_item_base {
+    padding: 12px 0;
+    border-bottom: 1px solid #555;
+    font-size: 20px;
+  }
+
+  .menu_item {
+
+
+    .menu_item_cell {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      .cell_icon {
+        display: flex;
+        align-self: center;
+        font-size: 24px;
+        padding-right: 10px;
+      }
+
+      .cell_text {
+        text-align: left;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .menu_item_children {
+    .menu_item_children_title {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      .title_icon {
+        display: flex;
+        align-self: center;
+        font-size: 24px;
+        padding-right: 10px;
+      }
+
+      .title_text {
+        font-size: 16px;
+        color: #acacac;
+      }
+    }
+
+    .menu_item_children_cell {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      .cell_text {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .menu_item_cell_active {
+    color: @active-text-color;
+    position: relative;
+  }
+
+  .menu_item_cell_active::before {
+    position: absolute;
+    content: '';
+    background: @active-text-color;
+    height: 24px;
+    width: 4px;
+    left: -12px;
+  }
+}
