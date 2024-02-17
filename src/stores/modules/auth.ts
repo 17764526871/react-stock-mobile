@@ -1,7 +1,7 @@
 import { atom, watch } from 'helux';
 
 interface AuthType {
-  userInfo?: '';
+  userInfo?: string;
 }
 
 const localStorageItemName = 'AuthStore';

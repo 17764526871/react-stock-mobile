@@ -14,10 +14,25 @@ interface RequestConfig extends AxiosRequestConfig {
 /** 请求器能力初始化 */
 export const useRequest = (baseConfig?: RequestConfig) => {
   const instance = axios.create(baseConfig);
+  instance.interceptors.request.use(
+    (config) => {
+      // 在发送请求之前做些什么
+      config.withCredentials = true;
+      return config;
+    },
+    (error) =>
+      // 对请求错误做些什么
+      Promise.reject(error),
+  );
 
-  instance.interceptors.request.use((config) => config);
-
-  instance.interceptors.response.use((response) => response);
+  instance.interceptors.response.use(
+    (response) =>
+      // 对响应数据做些什么
+      response,
+    (error) =>
+      // 对响应错误做些什么
+      Promise.reject(error),
+  );
 
   type RequestType = {
     <T>(config: RequestConfig, responseModel?: 'data'): Promise<T>;

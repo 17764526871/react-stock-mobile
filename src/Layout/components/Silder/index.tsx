@@ -1,9 +1,7 @@
-import { ConfigProvider, Popup } from 'react-vant';
+import { Popup } from 'react-vant';
 import styles from './index.module.less';
-import { useState } from 'react';
 import { menuAtom } from '@/stores/modules/menu';
 import { useAtom } from 'helux';
-import { Link } from 'react-router-dom';
 import { MenuComponent } from './component/menu';
 
 // const calcMenuTree = (menuTree: MenuTreeType[]): MenuProps['items'] => {
@@ -32,7 +30,7 @@ export const Silder = () => {
       position="left"
       onClose={onClose}
     >
-       <MenuComponent></MenuComponent>
+      <MenuComponent></MenuComponent>
     </Popup>
   );
 };

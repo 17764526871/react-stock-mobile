@@ -1,10 +1,11 @@
+@import '../styles/index.module.less';
+
 .layout_container {
-  .silder_container {}
-
-  .header_container {}
-
   .center_container {
+    height: calc(100vh - 70px);
     margin-top: 70px;
+    overflow: auto;
+    background: @background-page-color;
   }
 
   .right_container {

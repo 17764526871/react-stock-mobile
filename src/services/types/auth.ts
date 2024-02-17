@@ -6,6 +6,7 @@ export interface loginParams {
 export interface loginResponse {
   UserAccess: string[];
   UserNickName: string;
+  sessionid: string;
 }
 
 export interface RegisterUserParams {

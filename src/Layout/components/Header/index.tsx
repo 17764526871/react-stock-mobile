@@ -5,8 +5,11 @@ import { menuAtom } from '@/stores/modules/menu';
 import { useAtom } from 'helux';
 import { LogoutOutlined, StarOutlined, ToolOutlined, UserOutlined } from '@ant-design/icons';
 import { Dropdown, Avatar, ConfigProvider, MenuProps } from 'antd';
+import { setAuth } from '@/stores';
+import { useNavigate } from 'react-router-dom';
 
 export const Header = () => {
+  const navigator = useNavigate();
   const [menuState, setMenuState] = useAtom(menuAtom);
   const items: MenuProps['items'] = [
     {
@@ -39,6 +42,8 @@ export const Header = () => {
       icon: <LogoutOutlined />,
       onClick: () => {
         console.log('logoutClick');
+        setAuth({ userInfo: undefined });
+        navigator('/login');
       },
     },
   ];

@@ -1,21 +1,20 @@
 @import '../../../styles/index.module.less';
 
 .header_container {
-  height: 70px;
-  padding: 0 20px;
-  background-color: #101114;
-  color: @text-primary-color;
-  font-size: 24px;
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 70px;
   z-index: 2099;
   display: flex;
   align-items: center;
   align-self: center;
   justify-content: space-between;
+  width: 100vw;
+  height: 70px;
+  padding: 0 20px;
+  font-size: 24px;
+  color: @text-primary-color;
   vertical-align: middle;
+  background-color: #101114;
 
   .left_container {
     display: flex;
@@ -24,34 +23,27 @@
 
     .menu_icon {
       display: flex;
-
       margin-right: 12px;
     }
 
     .header_logo {
       display: flex;
-
     }
   }
 
-
   .right_container {
     display: flex;
-    align-self: center;
     align-items: center;
+    align-self: center;
     vertical-align: center;
 
     .search_container {
       display: flex;
-
       margin-right: 12px;
     }
 
     .user_container {
       display: flex;
-
     }
   }
-
-
 }

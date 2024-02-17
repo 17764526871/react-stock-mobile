@@ -10,4 +10,9 @@ export class RouterNavigate {
   static goHome() {
     router.navigate('/');
   }
+
+  /** 前往登录页 */
+  static goLogin() {
+    router.navigate('/login');
+  }
 }
